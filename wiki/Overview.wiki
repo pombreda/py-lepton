@@ -1,0 +1,23 @@
+#summary Lepton -- Architecture Overview
+
+= Architecture Overview =
+
+This should give you a basic overview of the terminology and top-level constructs of the Lepton particle engine.
+
+== Groups ==
+
+ParticleGroup objects are the lowest level construct. Groups consist of an arbitrary number of particle. Although in many ways a group is like a particle container, particles cannot exist independently outside of a group. All particles are created and destroyed via their group's methods. A particle spends its entire existence within a single group.
+
+Groups may be iterated to access individual particles. The objects returned through iteration are ParticleProxy objects that serve as a convenient way to manipulate individual particles within the group. Utimately, however, particle proxies are not independent first-class objects.
+
+== Controllers ==
+
+ParticleController objects 
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
