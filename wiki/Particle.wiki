@@ -1,7 +1,7 @@
 #summary Particle attributes
 #labels Featured
 
-Particles are members of [ParticleGroup]s. They cannot exist outside of a group. Once a particle is created in a particular group, it lives its entire live there. Particles can't be moved from one group to another, though they can be easily cloned.
+Particles are members of [ParticleGroup]s. They cannot exist outside of a group. Once a particle is created in a particular group, it lives its entire life there. Particles can't be moved from one group to another, though they can be easily cloned.
 
 Particles are model objects with no innate behavior or presentation by design. Particle behavior is handled by ParticleController objects. Presentation is handled by [ParticleRender]s.
 
