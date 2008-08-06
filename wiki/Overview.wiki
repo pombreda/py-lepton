@@ -32,7 +32,7 @@ Controllers are a major focus of Lepton's development and more will be added ove
 
 As factories for particles, emitters have several features for specifying the initial particle parameters. A template particle is provided as a basis for the particles emitted. Specified alone, each particle emitted is an exact clone of this template. The basic template may be augmented by a deviation template, which specifies the statisical deviation of the [Particle] attributes. This allows you to easily express how much, and in what way each particle differs from one another.
 
-Particle attribute values may also be expressed as a sequence of discrete values (e.g., the colors of the rainbow, discrete sizes, etc). Additionally, particle attribute values may be derived from a spacial {Domain], allowing expressive control over the desired range of composite attributes, such as position, velocity and color vectors.
+Particle attribute values may also be expressed as a sequence of discrete values (e.g., the colors of the rainbow, discrete sizes, etc). Additionally, particle attribute values may be derived from a spacial [Domain], allowing expressive control over the desired range of composite attributes, such as position, velocity and color vectors.
 
 == Renderers ==
 
@@ -43,4 +43,15 @@ A [ParticleRenderer] object can be bound to a group, defining how the particles 
   * BillboardRenderer -- A more advanced aligned-quad billboard renderer using OpenGL. natively supports individual particle size and texturing. Rotation support will be added soon.
 
 Renderers are a major focus of Lepton's development, expect more advanced and varied options soon.
+
+== Domains ==
+
+[Domain]s provide a way to describe spacial regions for use by particle controllers and emitters. Controllers, such as the BounceController and CollectorController affect particle behavior as they move into or out of the domain in space. [ParticleEmitter]s can use domains to express a geometric range of values that may be used as initial particle attribute values.
+
+Several domains are included with Lepton, and more are planned:
+
+  * LineDomain -- Simple line segment
+  * PlaneDomain -- Infinite 2D plane dividing space
+  * BoxDomain -- Axis-aligned rectangular prism
+  * SphereDomain -- Spherical region of space
 
