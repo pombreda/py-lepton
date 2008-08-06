@@ -2,19 +2,19 @@
 
 Groups contain particles. [ParticleController]s are bound to groups to define particle behavior. A group may have a renderer to define presentation for the particles in the group.
 
-= New Particle Semantics =
+== New Particle Semantics ==
 
 When a new particle is created in a group, it is not immediately visible. `len(group)` and `iter(group)` do not reflect the addition of the new particle until the next time the group is updated. The update method incorporates new particles into the group so that they are visible and active.
 
 New particles are not visible and active at first because they are often created in the middle of an update iteration. If they were immediately visible, they would get updated by any controllers that had not yet been invoked, but they would not get updated by controllers that were already finished for that iteration. This could result in inconsistent particle behavior or presentation. After incorporation in the next update, all controllers will have an opportunity to update the new particles before they are rendered.
 
-= Mutating Groups During Iteration =
+== Mutating Groups During Iteration ==
 
 It is safe to create and kill particles while iterating a group. Unlike other mutable containers like dictionaries and lists, groups are specifically designed to handle this case.
 
 It is also safe to bind or unbind controllers from a group during update. The change to the controller list will not go into effect until the next update, however. Thus it is impossible to prevent a controller from executing by unbinding it once an update has started.
 
-= Class Reference =
+== Class Reference ==
 
 {{{
 class ParticleGroup(__builtin__.object)
