@@ -1,6 +1,6 @@
 #summary Lepton ParticleGroup objects
 
-Groups contain particles. [ParticleController]s are bound to groups to define particle behavior. A group may have a renderer to define presentation for the particles in the group.
+Groups contain particles. [ParticleController]s are bound to groups to define particle behavior. A group may have a ParticleRenderer to define presentation for the particles in the group.
 
 == New Particle Semantics ==
 
