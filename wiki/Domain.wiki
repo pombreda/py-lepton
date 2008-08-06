@@ -30,3 +30,17 @@ class Domain(object):
 		method, so approximations are acceptable.
 		"""
 }}}
+
+Several [ParticleController]s use domains:
+
+  * CollectorController -- Kills particles as the enter or exit a Domain.
+  * BounceController -- Deflects particles off the surface of a Domain.
+
+== Built-in Domains ==
+
+Several domains are included in Lepton and more are planned.
+
+ * LineDomain -- Simple line segment
+  * PlaneDomain -- Infinite 2D plane dividing space
+  * BoxDomain -- Axis-aligned rectangular prism
+  * SphereDomain -- Spherical region of space
