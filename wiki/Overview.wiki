@@ -1,7 +1,5 @@
 #summary Lepton -- Architecture Overview
 
-= Architecture Overview =
-
 This should give you a basic overview of the terminology and top-level constructs of the Lepton particle engine.
 
 == Groups ==
@@ -27,3 +25,22 @@ Several controller types are included in Lepton, and it is easy to create your o
   * BounceController -- Deflects particles off the surface of a [Domain].
 
 Controllers are a major focus of Lepton's development and more will be added over time.
+
+== Emitters ==
+
+[ParticleEmitter]s are a special type of controller that create new particles in a group. They can be configured to emit particles at a specific rate, or can be used to emit a burst of particles at will.
+
+As factories for particles, emitters have several features for specifying the initial particle parameters. A template particle is provided as a basis for the particles emitted. Specified alone, each particle emitted is an exact clone of this template. The basic template may be augmented by a deviation template, which specifies the statisical deviation of the [Particle] attributes. This allows you to easily express how much, and in what way each particle differs from one another.
+
+Particle attribute values may also be expressed as a sequence of discrete values (e.g., the colors of the rainbow, discrete sizes, etc). Additionally, particle attribute values may be derived from a spacial {Domain], allowing expressive control over the desired range of composite attributes, such as position, velocity and color vectors.
+
+== Renderers ==
+
+A [ParticleRenderer] object can be bound to a group, defining how the particles of the group are drawn. Renderers can be invoked via the ParticleSystem, each ParticleGroup or individually as desired. Like [ParticleController]s, particle groups have a simple API and are easy to create for yourself. Two are currently included with the Lepton engine:
+
+  * PointRenderer -- Simple renderer using OpenGL GL_POINTs. Does not support individual particle size or rotation. May use textures by enabling point sprites in your application.
+
+  * BillboardRenderer -- A more advanced aligned-quad billboard renderer using OpenGL. natively supports individual particle size and texturing. Rotation support will be added soon.
+
+Renderers are a major focus of Lepton's development, expect more advanced and varied options soon.
+
