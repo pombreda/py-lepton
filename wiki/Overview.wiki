@@ -6,18 +6,24 @@ This should give you a basic overview of the terminology and top-level construct
 
 == Groups ==
 
-ParticleGroup objects are the lowest level construct. Groups consist of an arbitrary number of particle. Although in many ways a group is like a particle container, particles cannot exist independently outside of a group. All particles are created and destroyed via their group's methods. A particle spends its entire existence within a single group.
+ParticleGroup objects are the lowest level construct. Groups consist of an arbitrary number of [Particle]s. Although in many ways a group is like a particle container, particles cannot exist independently outside of a group. All particles are created and destroyed via their group's methods. A particle spends its entire existence within a single group.
 
 Groups may be iterated to access individual particles. The objects returned through iteration are ParticleProxy objects that serve as a convenient way to manipulate individual particles within the group. Utimately, however, particle proxies are not independent first-class objects.
 
+All particles in a group have the same general behavior and are rendered together using the same renderer.
+
 == Controllers ==
 
-ParticleController objects 
+ParticleController objects control the behavior of particles in a group. Typically, particle controllers are bound to a particular ParticleGroup or ParticleSystem. The controller modifies the particles in the group -- or all the groups in the system -- it is bound to at each update iteration. An update iteration is typically scheduled at a regular interval, or can simply done for each animation frame. 
 
+Several controller types are included in Lepton, and it is easy to create your own as well. Some commonly used controllers are:
 
-= Details =
+  * LifetimeController -- Kills particles older than a specified age.
+  * GravityController -- Imparts a fixed acceleration to all particles in a group
+  * MovementController -- Updates the position of particles based on their velocity.
+  * ColorBlenderController -- Modulates the color of particles over time.
+  * FaderController -- Fades the alpha component of particles in and out over time.
+  * CollectorController -- Kills particles as the enter or exit a [Domain].
+  * BounceController -- Deflects particles off the surface of a [Domain].
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Controllers are a major focus of Lepton's development and more will be added over time.
