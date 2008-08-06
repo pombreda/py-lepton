@@ -7,7 +7,7 @@ A controller is a simple callable object (i.e., function-like) with the followin
    my_controller(time_delta, group)
 }}}
 
-When invoked, the controller is free to manipulate the group and its particles anyway it likes. Typically, a controller will iterate the group's particles and modify them in some way. For example, here is a controller that changes the direction of a particles movement based on time, making it travel in a meandering path:
+When invoked, the controller is free to manipulate the group and its particles anyway it likes. Typically, a controller will iterate the group's particles and modify them in some way. For example, here is a controller that changes the direction of a particles movement based on time, making them travel in a meandering path:
 
 {{{
 from lepton import ParticleGroup
