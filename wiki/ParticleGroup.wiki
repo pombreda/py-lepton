@@ -17,11 +17,11 @@ It is also safe to bind or unbind controllers from a group during update. The ch
 == Class Reference ==
 
 {{{
-class ParticleGroup(__builtin__.object)
+class ParticleGroup(object)
  |  Group of particles that share behavior via controllers
  |  and are rendered as a unit
  |  
- |  ParticleGroup(controllers=(), renderer=None, system=particle.default_system)
+ |  ParticleGroup(controllers=(), renderer=None, system=lepton.default_system)
  |  
  |  Initialize the particle group, binding the supplied
  |  controllers to it and setting the renderer.
