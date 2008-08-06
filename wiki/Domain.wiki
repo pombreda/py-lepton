@@ -10,7 +10,7 @@ class Domain(object):
 
 	def generate(self):
 		"""Return a point within the domain as a 3-tuple. For domains with a
-		non-zero volume, 'point in domain' is guaranteed to return true. 
+		non-zero volume, 'domain.generate() in domain' is guaranteed to return true. 
 		"""
 	
 	def __contains__(self, point):
