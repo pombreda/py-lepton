@@ -10,12 +10,15 @@ A controller is a simple callable object (i.e., function-like) with the followin
 When invoked, the controller is free to manipulate the group and its particles anyway it likes. Typically, a controller will iterate the group's particles and modify them in some way. For example, here is a controller that changes the direction of a particles movement based on time, making it travel in a meandering path:
 
 {{{
+from lepton import ParticleGroup
 from math import sin, cos
 
 def meanderer(td, group):
 	for particle in group:
 		particle.position.x += sin((particle.age + particle.velocity.x) / 10) * 5
 		particle.position.y += cos((particle.age + particle.velocity.y) / 10) * 5
+
+group = ParticleGroup(controllers=[meanderer])
 }}}
 
 That's it! The simplest controllers can be functions, like the above. If the controller needs to store configuration state, you can simply define it as a class with an `__call__` method.
