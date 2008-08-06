@@ -13,7 +13,7 @@ All particles in a group have the same general behavior and are rendered togethe
 
 == Controllers ==
 
-ParticleController objects control the behavior of particles in a group. Typically, particle controllers are bound to a particular ParticleGroup or ParticleSystem. The controller modifies the particles in the group -- or all the groups in the system -- it is bound to at each update iteration. An update iteration is typically scheduled at a regular interval, or can simply done for each animation frame. 
+ParticleController objects control the behavior of particles in a group. Typically, particle controllers are bound to a particular ParticleGroup or ParticleSystem. The controller modifies the particles in the group -- or all the groups in the system -- it is bound to at each update iteration. An update iteration is typically scheduled at a regular interval, or can simply be done for each animation frame. 
 
 Several controller types are included in Lepton, and it is easy to create your own as well. Some commonly used controllers are:
 
