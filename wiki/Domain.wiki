@@ -20,7 +20,7 @@ class Domain(object):
 		"""For the line segment defined by the start and end point specified
 		(coordinate 3-tuples), return the point closest to the start point
 		where the line segment intersects surface of the domain, and the
-		surface normal unit vector at that point as a 2-tuple.  If the line
+		surface normal unit vector at that point in a 2-tuple.  If the line
 		segment does not intersect the domain, return the 2-tuple (None,
 		None).
 
