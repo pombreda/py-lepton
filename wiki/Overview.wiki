@@ -1,4 +1,5 @@
 #summary Lepton -- Architecture Overview
+#labels Featured
 
 This should give you a basic overview of the terminology and top-level constructs of the Lepton particle engine.
 
