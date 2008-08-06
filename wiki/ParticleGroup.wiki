@@ -12,7 +12,7 @@ New particles are not visible and active at first because they are often created
 
 It is safe to create and kill particles while iterating a group. Unlike other mutable containers like dictionaries and lists, groups are specifically designed to handle this case.
 
-It is also save to bind or unbind controllers from a group during update. The change to the controller list will not go into effect until the next update, however. Thus it is impossible to prevent a controller from executing by unbinding it once an update has started.
+It is also safe to bind or unbind controllers from a group during update. The change to the controller list will not go into effect until the next update, however. Thus it is impossible to prevent a controller from executing by unbinding it once an update has started.
 
 = Class Reference =
 
