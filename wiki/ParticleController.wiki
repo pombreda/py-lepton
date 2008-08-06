@@ -23,6 +23,8 @@ group = ParticleGroup(controllers=[meanderer])
 
 That's it! The simplest controllers can be functions, like the above. If the controller needs to store configuration state, you can simply define it as a class with an `__call__` method.
 
+Note that a single controller object may be bound to multiple groups (or bound to a system, which is effectively the same thing). Controller code should not assume that it will always be called with the same group object argument. If possible, controllers should avoid having group-specific state, but if that is necessary, it will need to be implemented such that the controller can be bound to many groups.
+
 == Built-in Controllers ==
 
 The following controllers come with Lepton:
