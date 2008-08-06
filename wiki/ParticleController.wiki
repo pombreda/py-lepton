@@ -20,7 +20,7 @@ def meanderer(td, group):
 
 That's it! The simplest controllers can be functions, like the above. If the controller needs to store configuration state, you can simply define it as a class with an `__call__` method.
 
-= Built-in Controllers =
+== Built-in Controllers ==
 
 The following controllers come with Lepton:
 
