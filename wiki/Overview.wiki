@@ -7,7 +7,7 @@ This should give you a basic overview of the terminology and top-level construct
 
 ParticleGroup objects are the lowest level construct. Groups consist of an arbitrary number of [Particle]s. Although in many ways a group is like a particle container, particles cannot exist independently outside of a group. All particles are created and destroyed via their group's methods. A particle spends its entire existence within a single group.
 
-Groups may be iterated to access individual particles. The objects returned through iteration are ParticleProxy objects that serve as a convenient way to manipulate individual particles within the group. Utimately, however, particle proxies are not independent first-class objects.
+Groups may be iterated to access individual particles. The objects returned through iteration are ParticleProxy objects that serve as a convenient way to manipulate individual particles within the group. Utimately, however, particles are not independent first-class objects.
 
 All particles in a group have the same general behavior and are rendered together using the same renderer.
 
