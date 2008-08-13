@@ -1,5 +1,5 @@
 #summary Lepton ParticleSystem objects
 
-Particle systems are containers for [ParticleGroup[s and provide convenient methods for updating and drawing all groups they contain. You can also bind [ParticleController]s to a particle system. These particle controllers are applied to all groups, and are useful if your application has global particle behavior shared by all particles (such as movement or gravity). Groups may bind additional controllers to specialize their [Particle]'s behavior.
+Particle systems are containers for [ParticleGroup]s and provide convenient methods for updating and drawing all groups they contain. You can also bind [ParticleController]s to a particle system. These particle controllers are applied to all groups, and are useful if your application has global particle behavior shared by all particles (such as movement or gravity). Groups may bind additional controllers to specialize their [Particle]'s behavior.
 
 The use of particle systems is for convenience and is entirely optional. Applications can instead opt to update and draw particle groups individually, if desired. 
