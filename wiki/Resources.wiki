@@ -1,0 +1,16 @@
+#summary Links to papers, related pages and other projects
+
+=== Other Particle Systems ===
+
+http://particlesystems.org
+    An open source particle engine and API written in C++. A strong source or ideas and inspiration. Lepton [Domain]s in particular are inspired by this project.
+
+[http://jops.softmed.org/ Java Open Particle System]
+  An open source particle engine for Java. Has a nice GUI for creating particle effect.s
+
+http://www.wondertouch.com/
+  A very nice looking commercial particle engine. Nice examples to draw inspiration from.
+
+
+
+
