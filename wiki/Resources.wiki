@@ -11,6 +11,17 @@ http://particlesystems.org
 http://www.wondertouch.com/
   A very nice looking commercial particle engine. Nice examples to draw inspiration from.
 
+=== Papers ===
 
+[http://www.gamasutra.com/features/20000623/vanderburg_01.htm Building an advanced particle system]
+  Gamasutra article with some ideas, not sure how "advanced" they are, but they are good basics.
+
+[http://www.gamasutra.com/view/feature/3680/a_more_accurate_volumetric_.php More accurate volumetric particle renderering]
+  Talks about solving boundary artifacts when volume filling particles (e.g., smoke) contact solid surfaces in 3D scenes. Something to consider for future Lepton functionality.
+
+[http://ati.amd.com/developer/techreports/2004/GH2004/Kipfer-UberFlow%20A%20GPU-Based%20Particle%20Engine(GH04)-Slides.pdf GPU-based particle system]
+  Particle system implemented using shaders. Contains some valuable ideas and datastructures for any particle system, however.
+
+[http://2ld.de/gdc2007/EverythingAboutParticleEffectsSlides.pdf Particle effects presentation]
 
 
