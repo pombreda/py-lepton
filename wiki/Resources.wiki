@@ -30,7 +30,9 @@ http://www.wondertouch.com/
 === Coding Resources ===
 
 [http://www.cse.yorku.ca/~oz/marsaglia-rng.html Fast random-number generators]
+[http://www.jstatsoft.org/v05/i08/supp/1 Ziggurat method for generating normally distributed random numbers] 
   The basis for the fast random number generators used by lepton.
+  
 
 [http://cowboyprogramming.com/2007/01/05/multithreading-particle-sytems/ Multi-threading particle systems]
   Leveraging parallel processing capabilities of modern PCs for better particle system performance.
