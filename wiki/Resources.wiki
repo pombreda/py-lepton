@@ -24,4 +24,18 @@ http://www.wondertouch.com/
 
 [http://2ld.de/gdc2007/EverythingAboutParticleEffectsSlides.pdf Particle effects presentation]
 
+[http://www.gamasutra.com/features/20040728/latta_01.shtml Building a million-particle system] 
+  Some ideas on scaling up particle effects, mostly involving pushing the work off to the GPU.
 
+=== Coding Resources ===
+
+[http://www.cse.yorku.ca/~oz/marsaglia-rng.html Fast random-number generators]
+  The basis for the fast random number generators used by lepton.
+
+[http://cowboyprogramming.com/2007/01/05/multithreading-particle-sytems/ Multi-threading particle systems]
+  Leveraging parallel processing capabilities of modern PCs for better particle system performance.
+
+[http://developer.apple.com/graphicsimaging/opengl/optimizingdata.html Optimizing OpenGL throughput on Mac OS X]
+
+[http://www.flipcode.com/documents/matrfaq.html Matrix and Quaternion FAQ]
+  Put this in your pipe and smoke it.
