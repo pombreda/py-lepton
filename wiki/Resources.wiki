@@ -3,7 +3,7 @@
 === Other Particle Systems ===
 
 http://particlesystems.org
-    An open source particle engine and API written in C++. A strong source or ideas and inspiration. Lepton [Domain]s in particular are inspired by this project.
+    An open source particle engine and API written in C++. A strong source of ideas and inspiration. Lepton [Domain]s in particular are inspired by this project.
 
 [http://jops.softmed.org/ Java Open Particle System]
   An open source particle engine for Java. Has a nice GUI for creating particle effect.s
