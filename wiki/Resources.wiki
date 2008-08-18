@@ -11,6 +11,9 @@ http://particlesystems.org
 http://www.wondertouch.com/
   A very nice looking commercial particle engine. Nice examples to draw inspiration from.
 
+http://www.fxpression.com/
+  Open source particle plug-in for Ogre3D
+
 === Papers ===
 
 [http://www.gamasutra.com/features/20000623/vanderburg_01.htm Building an advanced particle system]
