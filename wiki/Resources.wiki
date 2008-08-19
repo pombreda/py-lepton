@@ -16,6 +16,9 @@ http://www.fxpression.com/
 
 === Papers ===
 
+[http://freespace.virgin.net/hugo.elias/models/m_main.htm Hugo Elias' Models page]
+  Basic, practical examples of particles and simulating various real-life materials such as strings and cloth.
+
 [http://www.gamasutra.com/features/20000623/vanderburg_01.htm Building an advanced particle system]
   Gamasutra article with some ideas, not sure how "advanced" they are, but they are good basics.
 
