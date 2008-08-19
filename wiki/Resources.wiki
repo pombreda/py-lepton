@@ -14,7 +14,7 @@ http://www.wondertouch.com/
 http://www.fxpression.com/
   Open source particle plug-in for Ogre3D
 
-=== Papers ===
+=== Papers and Pages ===
 
 [http://freespace.virgin.net/hugo.elias/models/m_main.htm Hugo Elias' Models page]
   Basic, practical examples of particles and simulating various real-life materials such as strings and cloth.
