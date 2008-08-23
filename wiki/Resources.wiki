@@ -47,3 +47,6 @@ http://www.fxpression.com/
 
 [http://www.flipcode.com/documents/matrfaq.html Matrix and Quaternion FAQ]
   Put this in your pipe and smoke it.
+
+[http://palladion.com/home/tseaver/obzervationz/2008/unit_testing_notes-20080724 Using unittest effectively]
+  A nice overview of some non-obvious tips for writing effective unittests, by my old friend and former colleague, Tres Seaver.
