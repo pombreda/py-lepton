@@ -6,4 +6,10 @@
 
 *Improved domains* -- native code [Domain]s with support for more shapes, such as cones, cylinders, toroids, heightmaps and tri-meshes.
 
+*Windows Binary* 
+
 === Longer Term (post 1.0) ===
+
+*Particle-Particle Collision* -- For collective and liquid effects.
+
+*String and Cloth Simulation* -- Special particle groups/collectors for simulation of cloth, fibers, etc.
