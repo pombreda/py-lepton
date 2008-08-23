@@ -4,6 +4,6 @@
 
 *Dynamic parameters* -- [ParticleController]s and possibly other components would support dynamic parameters that can change over time, either via a step function, linear interpolator or spline.
 
-*Improved domains* -- native code domains with support for more shapes, such as cones, cylinders, toroids, heightmaps and tri-meshes.
+*Improved domains* -- native code [Domain]s with support for more shapes, such as cones, cylinders, toroids, heightmaps and tri-meshes.
 
 === Longer Term (post 1.0) ===
