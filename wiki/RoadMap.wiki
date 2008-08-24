@@ -6,6 +6,8 @@
 
 *Improved domains* -- native code [Domain]s with support for more shapes, such as cones, cylinders, toroids, heightmaps and tri-meshes.
 
+*Texturizers* -- Built-in support for texture atlases, texture coordinate generation, texture animation and 3D textures.
+
 *Windows Binary* 
 
 === Longer Term (post 1.0) ===
