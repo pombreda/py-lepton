@@ -14,6 +14,9 @@ http://www.wondertouch.com/
 http://www.fxpression.com/
   Open source particle plug-in for Ogre3D
 
+[http://www.tml.tkk.fi/~tilmonen/vee/home.html VEE -- Visual Effects Engine]
+  "2nd order" Open source particle effects engine with Python support
+
 === Papers and Pages ===
 
 [http://freespace.virgin.net/hugo.elias/models/m_main.htm Hugo Elias' Models page]
