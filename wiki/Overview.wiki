@@ -54,7 +54,7 @@ Several domains are included with Lepton, and more are planned:
 
   * LineDomain -- Simple line segment
   * PlaneDomain -- Infinite 2D plane dividing space
-  * BoxDomain -- Axis-aligned rectangular prism
+  * AABoxDomain -- Axis-aligned rectangular prism
   * SphereDomain -- Spherical region of space
 
 == Systems ==
