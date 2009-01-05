@@ -33,7 +33,7 @@ class Domain(object):
 
 Several [ParticleController]s use domains:
 
-  * CollectorController -- Kills particles as the enter or exit a Domain.
+  * CollectorController -- Kills particles as they enter or exit a Domain.
   * BounceController -- Deflects particles off the surface of a Domain.
 
 == Built-in Domains ==
