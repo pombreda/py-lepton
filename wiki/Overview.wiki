@@ -35,6 +35,11 @@ As factories for particles, emitters have several features for specifying the in
 
 Particle attribute values may also be expressed as a sequence of discrete values (e.g., the colors of the rainbow, discrete sizes, etc). Additionally, particle attribute values may be derived from a spacial [Domain], allowing expressive control over the desired range of composite attributes, such as position, velocity and color vectors.
 
+Two types of emitters are currently included with lepton:
+
+ * StaticEmitter -- Emits particles at a regular rate over time, or can emit an arbitrary number at once
+ * PerParticleEmitter -- Emits particles originating from the positions of all existing particles in a group. Useful for creating trails of particles. See the fireworks example included in lepton.
+
 == Renderers ==
 
 A [ParticleRenderer] object can be bound to a group, defining how the particles of the group are drawn. Renderers can be invoked via the ParticleSystem, each ParticleGroup or individually as desired. Like [ParticleController]s, particle groups have a simple API and are easy to create for yourself. Four are currently included with the Lepton engine:
