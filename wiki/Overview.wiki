@@ -24,6 +24,7 @@ Several controller types are included in Lepton, and it is easy to create your o
   * FaderController -- Fades the alpha component of particles in and out over time.
   * CollectorController -- Kills particles as the enter or exit a [Domain].
   * BounceController -- Deflects particles off the surface of a [Domain].
+  * MagnetController -- Attracts or repels particles to or from a [Domain].
 
 Controllers are a major focus of Lepton's development and more will be added over time.
 
@@ -61,6 +62,9 @@ Several domains are included with Lepton, and more are planned:
   * PlaneDomain -- Infinite 2D plane dividing space
   * AABoxDomain -- Axis-aligned rectangular prism
   * SphereDomain -- Spherical region of space
+  * DiscDomain -- Circular flat disc
+  * CylinderDomain -- Capped circular cylinder
+  * ConeDomain -- Right circular cone
 
 == Systems ==
 

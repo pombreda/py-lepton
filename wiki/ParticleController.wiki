@@ -36,3 +36,4 @@ The following controllers come with Lepton:
   * FaderController -- Fades the alpha component of particles in and out over time.
   * CollectorController -- Kills particles as the enter or exit a [Domain].
   * BounceController -- Deflects particles off the surface of a [Domain].
+  * MagnetController -- Attracts or repels particles to or from a [Domain].
