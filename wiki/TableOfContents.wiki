@@ -1,3 +1,4 @@
+#summary Table of contents sidebar
  * [Overview]
  * ParticleGroup
      * [Particle]
@@ -5,6 +6,5 @@
  * ParticleController
  * ParticleRenderer
  * ParticleSystem
-
  * [Resources]
  * RoadMap
