@@ -1,4 +1,5 @@
 #summary Lepton particle controller objects
+#sidebar TableOfContents
 
 Particle controllers affect the behavior of [Particle]s. They are bound to [ParticleGroup]s and typically invoked by their group's `update()` method.
 

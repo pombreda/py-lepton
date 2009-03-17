@@ -1,4 +1,5 @@
 #summary Lepton particle renderer objects
+#sidebar TableOfContents
 
 Particle renderers control the presentation of [Particle]s in a ParticleGroup. Renderers are typically bound to a group and invoked by the group's `draw()` method. Renders may also be invoked separately if desired, which can be useful if particular state changes are required before rendering a particular group.
 

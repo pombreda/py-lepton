@@ -1,4 +1,5 @@
 #summary Lepton spacial domains
+#sidebar TableOfContents
 
 Domains provide a way to describe regions of space in Lepton. These regions can be used for things like collision detection or to constrain the initial values for attributes of new particles created via a ParticleEmitter.
 

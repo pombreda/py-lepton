@@ -1,4 +1,5 @@
 #summary Lepton Particle attributes
+#sidebar TableOfContents
 
 Particles are members of [ParticleGroup]s. They cannot exist outside of a group. Once a particle is created in a particular group, it lives its entire life there. Particles can't be moved from one group to another, though they can be easily cloned.
 

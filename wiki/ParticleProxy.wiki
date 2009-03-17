@@ -1,4 +1,5 @@
 #summary Particle proxy objects
+#sidebar TableOfContents
 
 Particle proxies are used to access and manipulate particles from a ParticleGroup. Since [Particle]s are not first-class objects, these proxies are necessary to address them individually.
 

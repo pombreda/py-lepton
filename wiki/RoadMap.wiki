@@ -1,4 +1,5 @@
 #summary Features and changes that are planned for future versions
+#sidebar TableOfContents
 
 === Shorter Term (Probably in 1.0) ===
 
