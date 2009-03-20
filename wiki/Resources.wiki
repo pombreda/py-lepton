@@ -43,6 +43,9 @@ http://www.fxpression.com/
 [http://wwwcg.in.tum.de/Research/data/Publications/tvcg05.pdf A Particle System for Interactive Visualization of 3D Flows]
   Can simulate a flow involving millions of particles at interactive rates on the GPU
 
+[http://realtimecollisiondetection.net/blog/?p=91 Optimizing the rendering of a particle system]
+  Strategies for speeding up particle drawing
+
 === Coding Resources ===
 
 [http://www.cse.yorku.ca/~oz/marsaglia-rng.html Fast random-number generators]
