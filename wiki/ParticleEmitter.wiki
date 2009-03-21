@@ -36,12 +36,12 @@ emitter = StaticEmitter(
 
 The emitter above will generate the initial particle attribute values as follows:
 
-The `size` of all particles will be (2, 2, 0).
-The `color` will be red, green or blue chosen at random.
-The `velocity` will have a mean value of (0, 10, 0) with a random deviation of (2, 1, 2).
-The `position` will have a random value between (0, 0, 0) and (800, 0, 0).
-The `age` will have a mean value of 0 (the default) and a random deviation of 2. Note that ages of new particles are not allowed to be negative, and are thus clamped at 0.
-The remaining attributes (up, rotation, etc.) will be 0 or null vectors (the default if not specified).
+ * The `size` of all particles will be (2, 2, 0).
+ * The `color` will be red, green or blue chosen at random.
+ * The `velocity` will have a mean value of (0, 10, 0) with a random deviation of (2, 1, 2).
+ * The `position` will have a random value between (0, 0, 0) and (800, 0, 0).
+ * The `age` will have a mean value of 0 (the default) and a random deviation of 2. Note that ages of new particles are not allowed to be negative, and are thus clamped at 0.
+ * The remaining attributes (up, rotation, etc.) will be 0 or null vectors (the default if not specified).
 
 In addition to specifying the character of the initial particle attributes, emitters also accepts a rate and time_to_live value. The rate specifies how many particles per unit time are emitted into the ParticleGroup that the emitter is bound to. time_to_live is an optional value, which specifies how much time the emitter should be bound to its group. After this time expires, the emitter will automatically unbind itself from its group and thus stop emitting particles. Note the rate and time_to_live may be adjusted after constructing an emitter by modifying their attributes on the emitter object.
 
