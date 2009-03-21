@@ -4,7 +4,9 @@
      * [Particle]
      * ParticleProxy
  * ParticleController
+ * ParticleEmitter
  * ParticleRenderer
  * ParticleSystem
+----
  * [Resources]
  * RoadMap
