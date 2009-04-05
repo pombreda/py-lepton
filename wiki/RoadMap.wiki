@@ -7,7 +7,7 @@
 
 *Improved domains* -- native code [Domain]s with support for more shapes, such as curves, toroids, heightmaps and tri-meshes. _(in progress)_
 
-*Texturizers* -- Built-in support for texture atlases, texture coordinate generation, texture animation and 3D textures.
+*Texturizers* -- Built-in support for texture atlases, texture coordinate generation, texture animation and 3D textures. _(in progress)_
 
 *Display list renderer* -- Enable particles that have complex geometry, shading and texturing
 
