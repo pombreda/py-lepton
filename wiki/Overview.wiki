@@ -54,7 +54,7 @@ Renderers are a major focus of Lepton's development, expect more advanced and va
 
 == Domains ==
 
-[Domain]s provide a way to describe spacial regions for use by particle controllers and emitters. Controllers, such as the BounceController and CollectorController affect particle behavior as they move into or out of the domain in space. [ParticleEmitter]s can use domains to express a geometric range of values that may be used as initial particle attribute values.
+[Domain]s provide a way to describe spatial regions for use by particle controllers and emitters. Controllers, such as the BounceController and CollectorController affect particle behavior as they move into or out of the domain in space. [ParticleEmitter]s can use domains to express a geometric range of values that may be used as initial particle attribute values.
 
 Several domains are included with Lepton, and more are planned:
 
