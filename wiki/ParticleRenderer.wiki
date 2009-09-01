@@ -15,9 +15,9 @@ If the renderer modifies the OpenGL state, it should restore it where practical 
 
 Four particle renderers are currently included with the Lepton engine:
 
-  * PointRenderer -- Simple renderer using OpenGL GL_POINTs. Does not support individual particle size or rotation. May use textures by enabling point sprites in your application.
+  * PointRenderer -- Simple renderer using OpenGL GL_POINTs. Does not support individual particle size or rotation. May use textures by enabling point sprites in your application. Can be textured by using a [Texturizer].
 
-  * BillboardRenderer -- A more advanced aligned-quad billboard renderer using OpenGL. natively supports individual particle size and texturing.
+  * BillboardRenderer -- A more advanced aligned-quad billboard renderer using OpenGL. natively supports individual particle size and texturing using a [Texturizer].
 
   * PygameFillRenderer -- A simple render that draws particles to a pygame surface using color fills.
   * PygameBlitRenderer -- A more sophisticated renderer for pygame that draws particles by blitting to a surface. Also supports scaling and rotation. This is the pygame equivilant of the BillboardRenderer.

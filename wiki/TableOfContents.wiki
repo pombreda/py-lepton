@@ -6,6 +6,7 @@
  * ParticleController
  * ParticleEmitter
  * ParticleRenderer
+     * [Texturizer]
  * ParticleSystem
 ----
  * [Resources]
