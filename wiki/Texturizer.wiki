@@ -78,7 +78,7 @@ You also have the option to initialize the sprite texturizer from a sequence of 
  |      their combined size should typically be less than 1024x1024
 }}}
 
-Here is some example code using this method (also see the flyby example):
+Here is some example code using this method (also see the [http://code.google.com/p/py-lepton/source/browse/trunk/examples/flyby.py flyby example]):
 
 {{{
 images = [pyglet.image.load('texture%s.png' % (i+1)) for i in range(4)]
@@ -87,7 +87,7 @@ renderer=renderer.BillboardRenderer(texturizer.SpriteTexturizer.from_images(imag
 
 == Flip Book Texturizers ==
 
-A flip book texturizer allows you to apply a sequence of texture frames to your particles. This provides a way to animate each particle. The texturizer works by providing it a texture atlas that contains the frame images and a sequence of texture coordinate sets that locate them in the atlas. Each particle's age determines its currnet current animation frame.
+A flip book texturizer allows you to apply a sequence of texture frames to your particles. This provides a way to animate each particle. The texturizer works by providing it a texture atlas that contains the frame images and a sequence of texture coordinate sets that locate them in the atlas. Each particle's age determines its current current animation frame.
 
 {{{
      |  FlipBookTexturizer(texture, coords, duration, loop=True, dimension=2, 
@@ -128,7 +128,7 @@ A flip book texturizer allows you to apply a sequence of texture frames to your 
      |  may be set at one time.
 }}}
 
-Similar to the sprite texturizer above, there is an alternate constructor for creating a flipbook texturizer from a sequence of pyglet images (see also the logo example):
+Similar to the sprite texturizer above, there is an alternate constructor for creating a flipbook texturizer from a sequence of pyglet images (see also the [http://code.google.com/p/py-lepton/source/browse/trunk/examples/logo.py logo example]):
 
 {{{
      |  from_images(cls, images, duration, loop=True, dimension=2, filter=None, 
