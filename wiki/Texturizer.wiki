@@ -11,11 +11,11 @@ Texturizers work with OpenGL renderers to apply textures to particles during ren
 
 Lepton includes two types of texturizers:
 
-!SpriteTexturizer
+_!SpriteTexturizer_
 
   Applies a set of static texture coordinates from a single resident texture to a particle group. Note that different coordinates from the texture can be assigned to different particles, allowing you to use a sprite sheet to texture particles in the same group differently. If no specific texture coordinates are supplied, the entire texture is applied to all particles in the group by default.
 
-!FlipBookTexturizer
+_!FlipBookTexturizer_
 
   Animates a set of texture coordinates from a single resident "flipbook" texture for each particle in a group according to each particle's age. Each frame is given as a set of texture coordinates. The duration of the frames may be uniform or individually specified. The animation can be set to loop continuously through the frames or stop at the final frame.
 
@@ -34,14 +34,15 @@ renderer = renderer.BillboardRenderer(texturizer.SpriteTexturizer(texture.id))
 Use a sprite texturizer when you want to apply one or more fixed textures to your particles. In their simplest usage, a sprite texturizer simply applies the entire texture to all particles renderered in the group. However, with more advanced arguments you can use a single sprite texturizer to apply different parts of a texture to various particles like a sprite sheet or texture atlas. Although you do not directly control the texture coordinates assigned to specific particles, you can control the frequency of each set of coordinates to apply some coordinates more than others as desired.
 
 {{{
- |  SpriteTexturizer(texture, coords=(), weights=(), filter=GL_LINEAR, wrap=GL_CLAMP, aspect_adjust_width=False, aspect_adjust_height=False)
+ |  SpriteTexturizer(texture, coords=(), weights=(), filter=GL_LINEAR, wrap=GL_CLAMP, 
+ |                   aspect_adjust_width=False, aspect_adjust_height=False)
  |  
  |  texture -- OpenGL texture name, acquired via glGenTextures. It is up
  |  to the application to load the texture's data before using the texturizer
  |  
  |  coords -- A sequence of texture coordinate sets. Each set consists of coordinates
  |  for the four corners of the quad drawn for a particle (8 floats). Sets may
- |  consist of 4 coodinate pairs (tuples) or simply 8 floats corresponding to the
+ |  consist of 4 coordinate pairs (tuples) or simply 8 floats corresponding to the
  |  bottom left, bottom right, top right and top left texture coordinates respectively.
  |  if omitted, coords defaults to a single set of coordinates: (0,0, 1,0, 1,1, 0,1)
  |  
@@ -69,7 +70,8 @@ Use a sprite texturizer when you want to apply one or more fixed textures to you
 You also have the option to initialize the sprite texturizer from a sequence of pyglet images using the `from_images()` class method. This combines the input images into a single resident texture atlas and generates the proper texture coordinates to apply each image to particles. If you are not using pyglet, you can still use the default constructor above, but you must construct the texture atlas manually.
 
 {{{
- |  from_images(cls, images, weights=None, filter=None, wrap=None, aspect_adjust_width=False, aspect_adjust_height=False)
+ |  from_images(cls, images, weights=None, filter=None, wrap=None, 
+ |              aspect_adjust_width=False, aspect_adjust_height=False)
  |      Create a SpriteTexturizer from a sequence of Pyglet images. 
  |      
  |      Note all the images must be able to fit into a single OpenGL texture, so
@@ -88,7 +90,9 @@ renderer=renderer.BillboardRenderer(texturizer.SpriteTexturizer.from_images(imag
 A flip book texturizer allows you to apply a sequence of texture frames to your particles. This provides a way to animate each particle. The texturizer works by providing it a texture atlas that contains the frame images and a sequence of texture coordinate sets that locate them in the atlas. Each particle's age determines its currnet current animation frame.
 
 {{{
-     |  FlipBookTexturizer(texture, coords, duration, loop=True, dimension=2, filter=GL_LINEAR, wrap=GL_CLAMP, aspect_adjust_width=False, aspect_adjust_height=False)
+     |  FlipBookTexturizer(texture, coords, duration, loop=True, dimension=2, 
+     |                     filter=GL_LINEAR, wrap=GL_CLAMP, 
+     |                     aspect_adjust_width=False, aspect_adjust_height=False)
      |  
      |  texture -- OpenGL texture name, acquired via glGenTextures. It is up
      |  to the application to load the texture's data before using the texturizer
@@ -127,7 +131,8 @@ A flip book texturizer allows you to apply a sequence of texture frames to your 
 Similar to the sprite texturizer above, there is an alternate constructor for creating a flipbook texturizer from a sequence of pyglet images (see also the logo example):
 
 {{{
-    |  from_images(cls, images, duration, loop=True, dimension=2, filter=None, wrap=None, aspect_adjust_width=False, aspect_adjust_height=False)
+     |  from_images(cls, images, duration, loop=True, dimension=2, filter=None, 
+     |              wrap=None, aspect_adjust_width=False, aspect_adjust_height=False)
      |      Create a FlipBookTexturizer from a sequence of Pyglet images
      |      
      |      Note all the images must be able to fit into a single OpenGL texture, so
@@ -140,12 +145,12 @@ The texturizer interface consists of three methods invoked by the renderer durin
 
 {{{
      class Texturizer
-	 |  Sets and restores texture state and defines the particle texture coordinates.
+     |  Sets and restores texture state and defines the particle texture coordinates.
      |  
      |  set_state() -> None
      |      Setup the OpenGL texture state for rendering.
      |      Called by the renderer before particles are drawn.
-	 |
+     |
      |  generate_tex_coords(group) -> FloatArray
      |      Generate texture coordinates for the given particle
      |      group and return them in a FloatArray object.
