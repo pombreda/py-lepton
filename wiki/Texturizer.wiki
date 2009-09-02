@@ -26,7 +26,7 @@ Texturizers work with the PointRenderer and BillboardRenderer classes. If a text
 Here is some example code using pyglet textures with a simple SpriteTexturizer and BillboardRenderer:
 {{{
 texture = pyglet.image.load('my_texture.png').get_texture()
-renderer = renderer.BillboardRenderer(texturizer.SpriteTexturizer(texture.id))
+my_renderer = renderer.BillboardRenderer(texturizer.SpriteTexturizer(texture.id))
 }}}
 
 == Sprite Texturizers ==
@@ -82,7 +82,7 @@ Here is some example code using this method (also see the [http://code.google.co
 
 {{{
 images = [pyglet.image.load('texture%s.png' % (i+1)) for i in range(4)]
-renderer=renderer.BillboardRenderer(texturizer.SpriteTexturizer.from_images(images)))
+my_renderer=renderer.BillboardRenderer(texturizer.SpriteTexturizer.from_images(images)))
 }}}
 
 == Flip Book Texturizers ==
@@ -138,6 +138,43 @@ Similar to the sprite texturizer above, there is an alternate constructor for cr
      |      Note all the images must be able to fit into a single OpenGL texture, so
      |      their combined size should typically be less than 1024x1024
 }}}
+
+== Generating Point Textures ==
+
+Many types of particle effects can be made by drawing the particles as points that blend smoothly into the background or adjacent particles. Creating these types of textures manually can be tedious and often you will need to tweak the blending to make it look just right.
+
+Lepton supplies a `create_point_texture()` function so that you can programatically generate blended point textures. These textures can then be used directly by texturizers.
+
+{{{
+    create_point_texture(size, feather=0)
+        Create and load a circular grayscale image centered in a square texture
+        with a width and height of size. The radius of the circle is size / 2. 
+        Since size is used as the texture width and height, it should typically
+        be a power of two.
+        
+        Feather determines the softness of the edge of the circle. The default,
+        zero, creates a hard edged circle. Larger feather values create softer
+        edges for blending. The point at the center of the texture is always
+        white.
+        
+        Return the OpenGL texture name (id) for the resulting texture. This
+        value can be passed directy to a texturizer or glBindTexture
+}}}
+
+Using this function with texturizers is quite easy:
+
+{{{
+texture = texturizer.create_point_texture(64, 1)
+my_renderer = renderer.PointRenderer(texturizer.SpriteTexturizer(texture.id))
+}}}
+
+Here are some example textures created by `create_point_texture()` at various feather values:
+
+<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-0.01.png" title="feather=0.01" width=48 height=48>
+<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-0.5.png" title="feather=0.5" width=48 height=48>
+<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-1.0.png" title="feather=1.0" width=48 height=48>
+
+_Note:_ Use of this function requires pyglet.
 
 == Texturizer Interface ==
 
