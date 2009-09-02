@@ -165,14 +165,14 @@ Using this function with texturizers is quite easy:
 
 {{{
 texture = texturizer.create_point_texture(64, 1)
-my_renderer = renderer.PointRenderer(texturizer.SpriteTexturizer(texture.id))
+my_renderer = renderer.PointRenderer(texturizer.SpriteTexturizer(texture))
 }}}
 
-Here are some example textures created by `create_point_texture()` at various feather values:
+Here are some example particle textures created by `create_point_texture()` at various feather values shown against a black background:
 
-<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-0.01.png" title="feather=0.01" width=48 height=48>
-<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-0.5.png" title="feather=0.5" width=48 height=48>
-<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-1.0.png" title="feather=1.0" width=48 height=48>
+<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-0.01.png" title="feather=0.01" width=64 height=64>
+<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-0.5.png" title="feather=0.5" width=64 height=64>
+<img src="http://py-lepton.googlecode.com/svn/wiki/images/feather-1.0.png" title="feather=1.0" width=64 height=64>
 
 _Note:_ Use of this function requires pyglet.
 
