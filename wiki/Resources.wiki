@@ -6,6 +6,9 @@
 http://particlesystems.org
     An open source particle engine and API written in C++. A strong source of ideas and inspiration. Lepton [Domain]s in particular are inspired by this project.
 
+[http://spark.developpez.com/ Spark Particle Engine]
+  Open-source C++ particle engine with OpenGL and SFML renderers
+
 [http://flintparticles.org/ Flint Particle System]
   Open source Actionscript particle system. It's approach to a modular api is similar to Lepton's. Has some very cool features.
 
