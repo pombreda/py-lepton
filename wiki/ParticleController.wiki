@@ -38,3 +38,4 @@ The following controllers come with Lepton:
   * CollectorController -- Kills particles as the enter or exit a [Domain].
   * BounceController -- Deflects particles off the surface of a [Domain].
   * MagnetController -- Attracts or repels particles to or from a [Domain].
+  * DragController -- Simulates drag forces for particles moving through a fluid (i.e., air or water).
