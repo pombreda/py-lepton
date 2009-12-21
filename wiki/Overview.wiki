@@ -44,7 +44,7 @@ Two types of emitters are currently included with lepton:
 
 == Renderers ==
 
-A [ParticleRenderer] object can be bound to a group, defining how the particles of the group are drawn. Renderers can be invoked via the ParticleSystem, each ParticleGroup or individually as desired. Like [ParticleController]s, particle groups have a simple API and are easy to create for yourself. Four are currently included with the Lepton engine:
+A [ParticleRenderer] object can be bound to a group, defining how the particles of the group are drawn. Renderers can be invoked via the ParticleSystem, each ParticleGroup or individually as desired. Like [ParticleController]s, particle renderers have a simple API and are easy to create for yourself. Four are currently included with the Lepton engine:
 
   * PointRenderer -- Simple renderer using OpenGL GL_POINTs. Does not support individual particle size or rotation. Can be textured by using a [Texturizer].
   * BillboardRenderer -- A more advanced aligned-quad billboard renderer using OpenGL. natively supports individual particle size, rotation.  Can be textured by using a [Texturizer].
